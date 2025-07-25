@@ -8,9 +8,36 @@ Vi guiderò passo dopo passo su cosa faccio,su cosa sbaglio e altro ancora.
 Oggi ho intenzione di creare un'applicazione denominata: "TimeBuddy", essa ha come scopo la semplicità nell'aggiungere,rimuovere e modificare l'orario
 di un dipendente. Questo è il mio primo linguaggio di scrittura, Ho scelto python poichè versatile semplice e pulito.
 
+Riassunto
 Cosa fa TimeBuddy?:
-Mediante un'autenticazione tramite key visibile dentro il file KEY.txt
+Mediante un'autenticazione tramite key visibile dentro il file KEY.txt, è possibile creare un nome_utente e una password.
+Puoi:
+Aggiungere,rimuovere, modificare e visualizzare un lavoratore e i suoi rispettivi orari di lavoro.
+Puoi salvare il tutto in file txt.
 
+Il tutto è strutturato grazie alle funzioni che nei pochi mesi a venire mi son piaciuti tantissimo.
+Ho eseguito questi errori portanti:
+
+1. Architettura dei dati
+Il problema più importante è che puoi gestire solo UN amministratore e UN lavoratore alla volta:
+# Questo sovrascrive il lavoratore precedente
+lavoratori = {
+    "Nome_Lavoratore": nome_lavoratore,
+    "Orario_inizio": orario_inizio,
+    "Orario_fine": orario_fine
+}
+
+2. Gestione JSON impropria
+pythonfile.write(str(amministratori))  # Questo non è JSON valido
+Dovrebbe essere:
+pythonjson.dump(amministratori, file, indent=2)
+
+3. Flusso di autenticazione
+Il login non viene mai chiamato nel main - l'utente crea credenziali ma non può usarle.
+
+A fine Readme specifico e chiarisco come mai esistono errori tali.
+Vi prego di non esser duri e di consigliarmi modifiche su argomenti che non conosco.
+Grazie e arrivederci!.
 
 25/07/2025
 inizio:
@@ -18,7 +45,6 @@ ore 07:14
 Fine:
 10:39
 
-Spiegazione specifica su cosa può fare:
 Creerò questa applicazione senza l'utilizzo di Copilot e Gemini dentro VS code.
 
 Perchè creare questa mini applicazione?
@@ -631,3 +657,8 @@ Grazie per la comprensione,se hai intravisto altri errori oltre quelli da me rip
 Terminato:
 Giorno 25/07/2025
 10:39
+
+test 10:46 se tutto funziona correttamente su vs studio.
+test completato 10:48
+Beh infine è piccolissimo come programmino, quanto ti aspettavi di tempistica ahha.
+Grazie e buona giornata.
