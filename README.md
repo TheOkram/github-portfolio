@@ -8,8 +8,17 @@ Vi guiderò passo dopo passo su cosa faccio,su cosa sbaglio e altro ancora.
 Oggi ho intenzione di creare un'applicazione denominata: "TimeBuddy", essa ha come scopo la semplicità nell'aggiungere,rimuovere e modificare l'orario
 di un dipendente. Questo è il mio primo linguaggio di scrittura, Ho scelto python poichè versatile semplice e pulito.
 
-Qual ora a qualcuno interessasse il mio codice di quest'applicazione creata da un'autodidatta, fornirò il codice completo prima di inoltrargli l'exe stesso.
-Per rispetto.
+Cosa fa TimeBuddy?:
+Mediante un'autenticazione tramite key visibile dentro il file KEY.txt
+
+
+25/07/2025
+inizio:
+ore 07:14
+Fine:
+10:39
+
+Spiegazione specifica su cosa può fare:
 Creerò questa applicazione senza l'utilizzo di Copilot e Gemini dentro VS code.
 
 Perchè creare questa mini applicazione?
@@ -617,3 +626,8 @@ Dove ho usato AI?:
 .get() (Aiutato da CLAUDE AI)
 
 Grazie per la comprensione,se hai intravisto altri errori oltre quelli da me riportati,ti prego di spiegarmeli,sono alle prime armi.
+
+
+Terminato:
+Giorno 25/07/2025
+10:39
